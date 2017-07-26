@@ -1,0 +1,30 @@
+{
+  "name": "z",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "lint": "standard --verbose | snazzy",
+    "jest": "jest --watch --config test/jest.json",
+    "test": "npm run lint && npm run jest",
+    "jest:debug": "npm run __jest-debug -- --config test/jest.json",
+    "__jest-debug": "node --inspect-brk ./node_modules/.bin/jest --env jest-environment-node-debug"
+  },
+  "dependencies": {
+    "any": "1.x.x",
+    "core-z": "*",
+    "kind-of": "5.x.x",
+    "type-of-is": "3.x.x"
+  },
+  "devDependencies": {
+    "jest-cli": "20.x.x",
+    "jest-environment-node-debug": "2.x.x",
+    "standard": "*",
+    "snazzy": "*"
+  },
+  "author": "z Team",
+  "license": "MIT"
+}
